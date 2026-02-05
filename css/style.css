@@ -1,0 +1,55 @@
+#soundBoard {
+    background-color: black;
+}
+
+#vonal {
+    background-color: white;
+    width: 2px;
+    height: 45px;
+    position: absolute;
+}
+
+#idojarasDiv {
+    border: 3px solid;
+    background: linear-gradient(yellow, rgb(0, 247, 255));
+    text-align: center;
+    padding: 30px;
+    width: 200px;
+    left: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+body {
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(green, rgb(0, 60, 0));
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+p, h2 {
+    text-align: left;
+}
+
+.idojarasErtek {
+    text-align: center;
+    margin: 5px;
+}
+
+.menu {
+    text-align: center;
+}
+
+#kinezetTablazat {
+    border: 1px, solid;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.kinezetAdat {
+    border: 1px solid;
+    padding: 5px;
+}
