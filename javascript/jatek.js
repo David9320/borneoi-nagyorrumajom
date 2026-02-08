@@ -16,12 +16,12 @@ const GRAY = "rgb(67, 67, 67)";
 
 const majomfejImg = new Image()
 majomfejImg.src = "kepek/majomfej.png";
-
+/*
 const canvas = document.getElementById("majomCanvas");
 canvas.style.width = `${canvasSzel}px`;
 canvas.style.height = `${canvasMag}px`;
 const ctx = canvas.getContext("2d");
-
+*/
 const ugrasGomb = document.getElementById("ugrasGomb");
 //const uvoltesGomb = document.getElementById("uvoltesGomb");
 const jatekGomb = document.getElementById("jatekGomb")
@@ -43,7 +43,7 @@ let deltaX = 90;
 let ugorhat = true;
 let akadalyok = [canvasSzel - 50];
 let tavolsag = Math.floor(Math.random() * 300) + 200;
-
+/*
 majomfejImg.addEventListener("load", function() {
     majomfejImg.style.width = `${majomfejSzel}px`;
     majomfejImg.style.height = `${majomfejMag}px`;
@@ -53,7 +53,7 @@ majomfejImg.addEventListener("load", function() {
     elobb = Date.now();
     //tickID = setInterval(tick, 5);
 });
-
+*/
 /*
 uvoltesGomb.addEventListener("click", function() {
     uvoltesAudio.play();
@@ -183,7 +183,7 @@ function vonalTick() {
         //vonal.style.display = "flex";
     }
 }
-
+/*
 ugrasGomb.addEventListener("click", function() {
     if(!ugorhat) return;
     deltaY = -150;
@@ -224,3 +224,4 @@ function draw() {
         ctx.fillRect(x, y, w, h);
     }
 }
+*/
