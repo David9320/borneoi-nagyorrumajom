@@ -32,7 +32,7 @@ function addElement(tipus, szoveg, classText) {
 
 
 async function getVarosLista() {
-    const response = await fetch("../adatok/varosok.txt");
+    const response = await fetch("./adatok/varosok.txt");
     const data = await response.text();
     const dataLista = data.split("\t");
     const varosok = [];
@@ -61,3 +61,4 @@ setDiv(hely);
 setInterval(function() {
     setDiv(hely);
 }, 300000);
+
