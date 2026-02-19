@@ -1,0 +1,15 @@
+1.	Samarinda	Indonézia	Kalimantan	727 500	929
+2.	Banjarmasin	Indonézia	Kalimantan	625 481	8687
+3.	Kuching	Malajzia	Sarawak	617 886	332
+4.	Balikpapan	Indonézia	Kalimantan	557 579	1058
+5.	Pontianak	Indonézia	Kalimantan	554 764	5146
+6.	Kota Kinabalu	Malajzia	Sabah	462 963	1319
+7.	Tawau	Malajzia	Sabah	412 375	67
+8.	Sandakan	Malajzia	Sabah	409 056	181
+9.	Miri	Malajzia	Sarawak	300 543	64
+10.	Bandar Seri Begawan	Brunei		300 000	490
+11.	Sibu	Malajzia	Sarawak	247 995	111
+12.	Palangkaraya	Indonézia	Kalimantan	220 962	92
+13.	Lahad Datu	Malajzia	Sabah	206 861	28
+14.	Banjarbaru	Indonézia	Kalimantan	199 627	538
+15.	Tarakan	Indonézia	Kalimantan	193 370	771
