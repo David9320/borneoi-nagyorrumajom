@@ -16,15 +16,11 @@ const GRAY = "rgb(67, 67, 67)";
 
 const majomfejImg = new Image()
 majomfejImg.src = "kepek/majomfej.png";
-/*
+
 const canvas = document.getElementById("majomCanvas");
 canvas.style.width = `${canvasSzel}px`;
 canvas.style.height = `${canvasMag}px`;
 const ctx = canvas.getContext("2d");
-*/
-const ugrasGomb = document.getElementById("ugrasGomb");
-//const uvoltesGomb = document.getElementById("uvoltesGomb");
-const jatekGomb = document.getElementById("jatekGomb")
 
 const uvoltesAudiok = document.getElementById("uvoltesAudiok").children;
 const uvoltesAudio = uvoltesAudiok[0];
@@ -33,6 +29,7 @@ const uvoltesTablazat = document.getElementById("uvoltesTablazat")
 const vonal = document.getElementById("vonal");
 const gombSzamInput = document.getElementById("gombSzam");
 const csuszka = document.getElementById("csuszka");
+const img = document.getElementById("img");
 //const sorok = uvoltesTablazat.children[0].children;
 let lenyomva = []
 
@@ -43,17 +40,18 @@ let deltaX = 90;
 let ugorhat = true;
 let akadalyok = [canvasSzel - 50];
 let tavolsag = Math.floor(Math.random() * 300) + 200;
-/*
+
 majomfejImg.addEventListener("load", function() {
     majomfejImg.style.width = `${majomfejSzel}px`;
     majomfejImg.style.height = `${majomfejMag}px`;
     canvas.width = majomfejImg.width * canvasSzel / majomfejSzel;
     canvas.height = majomfejImg.height * canvasMag / majomfejMag;
-    draw();
-    elobb = Date.now();
+    ctx.drawImage(majomfejImg, 0, 0, majomfejImg.width / 3, majomfejImg.height / 3, 0, 0, canvas.width, canvas.height)
+    //const imgURL = majomCanvas.toDataURL("image/png");
+    //img.src = imgURL;
     //tickID = setInterval(tick, 5);
 });
-*/
+
 /*
 uvoltesGomb.addEventListener("click", function() {
     uvoltesAudio.play();
@@ -183,45 +181,3 @@ function vonalTick() {
         //vonal.style.display = "flex";
     }
 }
-/*
-ugrasGomb.addEventListener("click", function() {
-    if(!ugorhat) return;
-    deltaY = -150;
-    ugorhat = false;
-    uvoltesAudio.play();
-});
-
-function tick() {
-    deltaTime = (Date.now() - elobb) / 1000;
-    elobb = Date.now();
-    deltaY += g * deltaTime;
-    majomfejY += deltaY * deltaTime;
-    if(majomfejY + majomfejMag >= canvasMag) {
-        majomfejY = canvasMag - majomfejMag;
-        ugorhat = true;
-    }
-    if(akadalyok[akadalyok.length - 1] < canvasSzel - tavolsag) {
-        akadalyok.push(canvasSzel);
-        tavolsag = Math.floor(Math.random() * 300) + 200;
-    }
-    for(let i = 0; i < akadalyok.length; i++) {
-        akadalyok[i] -= deltaX * deltaTime;
-        if(akadalyok[i] <= -akadalySzel) akadalyok.shift();
-    }
-    draw();
-}
-
-function draw() {
-    ctx.fillStyle = "rgb(0, 0, 0, 255)";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.drawImage(majomfejImg, majomfejX * canvas.width / canvasSzel, majomfejY * canvas.height / canvasMag);
-    ctx.fillStyle = "rgb(0, 255, 0, 255)";
-    for(let i = 0; i < akadalyok.length; i++) {
-        const x = akadalyok[i] * canvas.width / canvasSzel;
-        const y = (canvasMag - akadalyMag) * canvas.height / canvasMag;
-        const w = akadalySzel * canvas.width / canvasSzel;
-        const h = akadalyMag * canvas.height / canvasMag;
-        ctx.fillRect(x, y, w, h);
-    }
-}
-*/
