@@ -62,6 +62,10 @@ p, h2 {
     background-color: rgba(160, 77, 185, 0.979);
 }
 
+th.kinezetAdat {
+    background-color: rgba(102, 47, 119, 0.979);
+}
+
 .majomKep {
     border-radius: 10px;
     border: 3px solid;
@@ -74,4 +78,37 @@ p, h2 {
 
 .video {
     height: 500px;
+}
+
+#varosCim {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#varosSelect {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.menupont {
+    color: white
+}
+
+li {
+    margin: auto;
+    text-align: left;
+}
+
+#keszitette {
+    margin-left: -30px;
+    margin-bottom: -10px;
+}
+
+#majomCanvas {
+    border: 5px solid;
+}
+
+#kepMag {
+    margin-top: 50px;
 }
